@@ -1,0 +1,158 @@
+body {
+	user-select: none;
+}
+
+.outer-section {
+	width: 140px;
+	height: 80px;
+	padding: 8PX;
+
+	background-color: #ffea87;
+	border: 4px solid #a18b3e;
+	border-radius: 8px;
+
+	float: none;
+	margin: 0 auto;
+
+	text-align: center;
+	font-weight: bold;
+	font-size: 120%;
+	color: #7b4d11;
+}
+
+.inner-section {
+	width: 80px;
+	height: 35px;
+
+	float: none;
+	margin: 0 auto;
+
+	border-top: 4px solid #a18b3e;
+	border-left: 1px solid #a18b3e;
+	border-right: 1px solid #a18b3e;
+	border-bottom: 1px solid #a18b3e;
+	background-color: #fff8c2;
+	border-radius: 10px;
+
+	text-align: center;
+	font-weight: bold;
+	font-size: 120%;
+	color: #7b4d11;
+}
+
+
+#green-bar {
+	width: 100%;
+	height: 30px;
+	background-color: #4e7824;
+}
+
+#footer {
+	width: 100%;
+	height: 55px;
+	background-color: #a37e27;
+}
+
+.column-styling {
+	height: 410px;
+}
+
+.draggable {
+	height: 25px;
+	border-radius: 10px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.bar-a {
+	width: 30px;
+	height: 330px;
+	background-color: #f9bc53;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	position: absolute;
+	left: 58px;
+	bottom: 0px;
+	z-index: -100;
+}
+
+.bar-b {
+	width: 10px;
+	height: 330px;
+	position: absolute;
+	left: 48px;
+	bottom: 0px;
+}
+
+.bar-c {
+	width: 10px;
+	height: 330px;
+	position: absolute;
+	left: 88px;
+	bottom: 0px;
+}
+
+.ring-wrapper {
+	width: 115px;
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	color: #2e2e2e;
+	font-weight: bold;
+}
+
+.ring9 {
+	background-color: #533b79;
+	width: 115px;
+}
+
+.ring8 {
+	background-color: #865281;
+	width: 105px;
+}
+
+.ring7 {
+	background-color: #f184b2;
+	width: 95px;
+}
+
+.ring6 {
+	background-color: #c1d7db;
+	width: 85px;
+}
+
+.ring5 {
+	background-color: #70c88f;
+	width: 75px;
+}
+
+.ring4 {
+	background-color: #b0ce66;
+	width: 65px;
+}
+
+.ring3 {
+	background-color: #f4b57a;
+	width: 55px;
+}
+
+.ring2 {
+	background-color: #e6806c;
+	width: 45px;
+}
+
+.ring1 {
+	background-color: #cf4b39;
+	width: 35px;
+}
+
+
+#button-wrapper {
+	width: 100%;
+	height: 50px;
+	background-color: #8fa249;
+}
+
+.btn {
+	margin: 8px 45px;
+}

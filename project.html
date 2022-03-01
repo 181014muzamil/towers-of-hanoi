@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Game -- Project</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.9.0.custom.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+	<div id="success-message">
+		<p>You won the game</p>
+	</div>
+
+	<div id="out-of-moves-message">
+		<p>Game Over You've run out of moves :(</p>
+	</div>
+
+	<div class="container" style="margin-top: 10px;">
+		<div class="row">
+			<div class="col-xs-4">
+				<div class="outer-section">
+					<span>Time</span>
+					<div class="inner-section">
+						<span id="timer">0</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="outer-section">
+					<span>Moves</span>
+					<div class="inner-section">
+						<span id="moves-taken">0</span>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="outer-section">
+					<span>Moves Left</span>
+					<div class="inner-section">
+						<span id="moves-left"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="col-xs-4 column-styling" id="bar1">
+			<div class="bar-a droppable"></div>
+			<div class="bar-b droppable"></div>
+			<div class="bar-c droppable"></div>
+			<div class="ring-wrapper">
+			</div>
+		</div>
+
+		<div class="col-xs-4 column-styling" id="bar2">
+			<div class="bar-a droppable"></div>
+			<div class="bar-b droppable"></div>
+			<div class="bar-c droppable"></div>
+			<div class="ring-wrapper"></div>
+		</div>
+
+		<div class="col-xs-4 column-styling" id="bar3">
+			<div class="bar-a droppable"></div>
+			<div class="bar-b droppable"></div>
+			<div class="bar-c droppable"></div>
+			<div class="ring-wrapper"></div>
+		</div>
+	</div>
+
+	<div id="green-bar" class="container"></div>
+
+	<div id="button-wrapper" class="container">
+		<div class="btn btn-md btn-danger" id="undo-btn">Undo</div>
+		<div class="btn btn-md btn-primary" id="redo-btn">Redo</div>
+	</div>
+
+	<div id="footer" class="container"></div>
+
+</body>
+
+</html>
