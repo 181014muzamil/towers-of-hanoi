@@ -8,6 +8,8 @@ var current;
 var redoArray = [];
 
 $(function () {
+  $("#undo-btn").attr("disabled", true);
+  $("#redo-btn").attr("disabled", true);
   $("#moves-left").text(movesLeft);
   makeRingAppearRandomly();
   undoRedo();
@@ -72,6 +74,8 @@ function drop() {
           undoArray.push(current);
         }
         current = index;
+        $("#undo-btn").removeAttr("disabled");
+        $("#redo-btn").attr("disabled", true);
         while (redoArray.length > 0) redoArray.pop();
       }
 
@@ -135,6 +139,7 @@ function undo() {
   redoArray.push(current);
   current = undoArray.pop();
   updateMoves(false);
+  $("#redo-btn").removeAttr("disabled");
 }
 
 function redo() {
@@ -147,16 +152,23 @@ function redo() {
     var wrapper = $(`#${current.droppingBar}`).find(".ring-wrapper");
     $(child).prependTo(wrapper);
     updateMoves(true);
+    $("#undo-btn").removeAttr("disabled");
   }
 }
 
 function undoRedo() {
   $("#undo-btn").click(function () {
     undo();
+    if (!current) {
+      $("#undo-btn").attr("disabled", true);
+    }
   });
 
   $("#redo-btn").click(function () {
     redo();
+    if (redoArray.length == 0) {
+      $("#redo-btn").attr("disabled", true);
+    }
   });
 }
 
